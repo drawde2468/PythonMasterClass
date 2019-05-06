@@ -37,15 +37,29 @@
 # print(even == anotherEven)
 #
 # print(even)
+##
+# even = [2, 4, 6, 8]
+# odd = [1, 3, 5, 7, 9]
+#
+# numbers = [even, odd]
+#
+# for numberSet in numbers:
+#     print(numberSet)
+#
+#     for value in numberSet:
+#         print(value)
 
-even = [2, 4, 6, 8]
-odd = [1, 3, 5, 7, 9]
+menu = []
+menu.append(["eggs", "spam", "bacon"])
+menu.append(["eggs", "sausage", "bacon"])
+menu.append(["eggs", "spam"])
+menu.append(["eggs", "bacon", "spam"])
+menu.append(["eggs", "bacon", "sausage", "spam"])
+menu.append(["spam", "bacon", "sausage", "spam"])
+menu.append(["spam", "egg", "spam", "spam", "bacon", "spam"])
+menu.append(["spam", "egg", "sausage", "spam"])
 
-numbers = [even, odd]
-
-for numberSet in numbers:
-    print(numberSet)
-
-    for value in numberSet:
-        print(value)
-
+for meal in menu:
+    if "spam" not in meal:
+        for ingredients in meal:
+            print(ingredients)
