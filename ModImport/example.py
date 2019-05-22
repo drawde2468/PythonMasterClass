@@ -1,3 +1,3 @@
 import random
 
-help(random.randint)
+help(random)
